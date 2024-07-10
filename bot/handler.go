@@ -8,7 +8,7 @@ import (
 
 func CommandHandler(discord *discordgo.Session, message *discordgo.MessageCreate) {
 	switch message.Content {
-	case "!ping":
+	case "!dolar":
 		commands.GetDolarPrice(discord, message)
 	}
 }
